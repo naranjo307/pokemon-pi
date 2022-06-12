@@ -1,0 +1,10 @@
+.contenedorCard { 
+    
+     border: solid 4px green ;
+}
+.fila {
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    border: solid 7px purple;
+}
