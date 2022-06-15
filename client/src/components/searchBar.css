@@ -1,0 +1,27 @@
+.searchInput{
+    display: inline-flex;
+    background-color: #b4640a;
+    color: rgb(30, 8, 8);
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  .searchButton{
+    cursor:pointer;
+    background-color: #b4640a;
+    color: rgb(30, 8, 8);
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 10px;
+  }

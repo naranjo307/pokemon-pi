@@ -13,15 +13,15 @@ var p3 = 'official-artwork'
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 const getApiInfo = async () => {
-    const apiUrl = await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=20')
+    const apiUrl = await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=40')
     const apiInfo = await apiUrl.data.results
-    let pokemons = []
-      
-        for (i=0; i<apiInfo.length; i++) {
-            if (apiInfo[i].url) {
-                const pokemonInfo = await axios.get(`${apiInfo[i].url}`)
+    let pokemons = await Promise.all (
+
+     apiInfo.map(async (e) => {
+            if (e.url) {
+                const pokemonInfo = await axios.get(`${e.url}`)
                 const thisPokemon = await pokemonInfo.data
-                pokemons.push({
+                return {
                     id: thisPokemon.id,
                     name: thisPokemon.name,
                     types: thisPokemon.types.map(e => e.type.name),
@@ -32,11 +32,15 @@ const getApiInfo = async () => {
                     height: thisPokemon.height,
                     weight: thisPokemon.weight,
                     image: `${thisPokemon[p1][p2][p3].front_default}`
+                }
 
-                })
+                
             }
+         
+        })
+    )    
 
-        }
+        
       
        
     return pokemons
@@ -65,7 +69,7 @@ const getAllPokemons = async () => {
 
     } else return e
 })
-    console.log(infoTotal2)
+    
     return infoTotal2
 
 }
@@ -74,7 +78,8 @@ router.get('/pokemons', async (req, res) => {
     const name = req.query.name
     let pokemonsTotales = await getAllPokemons()
     if (name) {
-        let pokemonName = await pokemonsTotales.filter(e => e.name.toLowerCase()===(name.toLowerCase()))
+        console.log(pokemonsTotales)
+        let pokemonName =  await pokemonsTotales.filter(e => e.name.toLowerCase()===(name.toLowerCase()))
         pokemonName.length ?
         res.status(200).send(pokemonName) :
         res.status(404).send('no existe el pokemon')
@@ -85,7 +90,7 @@ router.get('/pokemons', async (req, res) => {
 
 router.get('/types', async (req, res) => {
     const typesApi = await axios.get('https://pokeapi.co/api/v2/type')
-    types = typesApi.data.results.map(e => e.name)
+    var types = typesApi.data.results.map(e => e.name)
     types.forEach(e => {
         Type.findOrCreate({
             where: {name: e}

@@ -1,10 +1,95 @@
-.contenedorCard { 
-    
-     border: solid 4px green ;
+.cardDetail {
+  border-color: black;
+  border-radius: 20px;
+  font-family:Courier New;
+  background-color: #b4640a;
+}
+.stats {
+  font-family:Courier New;
+  
+  height: 30px;
+  color: #000000;
+  font-size: x-large;
+}
+.icon {
+  max-height: 30px;
+  max-width: 30px;
+}
+.detailImg{
+  width: 500px;
+  height: 400px;
 }
 .fila {
     
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    border: solid 7px purple;
+    grid-template-columns: 25% 25% 25% 25% ;
+    ;
 }
+.select {
+    text-align: center;
+    margin: 10px;
+}
+
+
+  .box select {
+    display: inline-flex;
+    background-color: #b4640a;
+    color: rgb(30, 8, 8);
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 10px;
+    cursor:pointer;
+  }
+  
+ 
+  .box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .box select option {
+    padding: 30px;
+    
+  }
+  .createButton {
+    font-family:Courier New;
+    margin: 30px;
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .createButton {
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: bisque;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 0 rgb(0, 0, 0),
+      -5px -5px 0 rgb(0, 0, 0),
+      -5px 5px 0 rgb(0, 0, 0),
+      5px -5px 0 rgb(0, 0, 0);
+    transition: 500ms ease-in-out;
+  }
+  
+  .createButton:hover {
+    box-shadow: 20px 5px 0 rgb(255, 255, 255), -20px -5px 0 rgb(170, 27, 27);
+  }
+  
+  .createButton:focus {
+    outline: none;
+  }

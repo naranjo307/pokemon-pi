@@ -1,0 +1,32 @@
+.paginado {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.li {display: inline;}
+
+.myButton {
+	margin: 5px;
+	box-shadow:inset 0px 1px 1px 0px #ffffff;
+	background:linear-gradient(to bottom, #ff0505 5%, #ffffff 100%);
+	background-color:#ff0505;
+	border-radius:41px;
+	border:2px solid #30261d;
+	display:inline-block;
+	cursor:pointer;
+	color:#fffaff;
+	font-family:Courier New;
+	font-size:24px;
+	font-weight:bold;
+	padding:5px 11px;
+	text-decoration:none;
+	text-shadow:1px -1px 3px #030303;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ff0505 100%);
+	background-color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
