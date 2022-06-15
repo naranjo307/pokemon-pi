@@ -11,7 +11,195 @@
    
 }
 
+
 .divCard:hover {
     transform: scale(1.05);
     background-color: rgb(110, 84, 84);
 }
+
+.typesDiv {
+  display: inline;
+  padding:5px 1px;
+  text-align: center;
+      
+  
+}
+.img {
+    max-height: 150px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+  }
+  h1, h3, h4, h5 {
+    margin: 0;
+    font-weight: 450;
+    text-align: center;
+    border-radius:42px;
+      padding:5px 15px;
+    font-family:Courier New;
+    
+  }
+  
+  
+  .card {
+    display: inline-block;
+    width: 300px;
+    padding: 1em;
+    border-radius: 15px;  
+    margin: 10px;
+    background: rgba(255, 243, 196, 0.617);
+    text-align: left;
+    font-family:Courier New;
+    color: #000000;
+    text-shadow:1px -1px 3px #030303;
+  
+   
+    }
+    
+    .normal {
+      
+      
+      
+        background: linear-gradient(120deg, #cdd1d2 0%, #dbcb79 100%);    
+    box-shadow: 0px 5px 20px -10px #000000;
+    
+      background-color: #000000;
+      }
+
+      .fighting {
+        background: linear-gradient(120deg, #f4f9fb 0%, #271209 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .flying {
+        border-radius:42px;
+        padding:5px 15px;
+      
+        background: linear-gradient(120deg, #ffffff 0%, #48eaf9 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .poison {
+        background: linear-gradient(120deg, #9963af 0%, #b400d0 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .ground {
+        background: linear-gradient(120deg, #817860 0%, #855c03 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .rock {
+        background: linear-gradient(120deg, #8e6108 0%, #322a09 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .bug {
+        background: linear-gradient(120deg, #9ac49a 0%, #06f40a 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .ghost {
+        background: linear-gradient(120deg, #701dbe 0%, #1c013f 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .steel {
+        background: linear-gradient(120deg, #a6b2b6 0%, #363637 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .fire {
+        background: linear-gradient(120deg, #e95656 0%, #9e0404 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .water {
+        background: linear-gradient(120deg, #1CB5E0 0%, #295cd3 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .grass {
+        background: linear-gradient(120deg, #416a44 0%, #087911 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .electric {
+        background: linear-gradient(120deg, #acae59 0%, #eae60c 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .psychic {
+        background: linear-gradient(120deg, #db7db2 0%, #5c0e6c 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .ice {
+        background: linear-gradient(120deg, #1CB5E0 0%, #000851 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .dragon {
+        background: linear-gradient(120deg, #da5458 0%, #930d37 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .dark {
+        background: linear-gradient(120deg, #6b696c 0%, #202020 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .fairy {
+        background: linear-gradient(120deg, #e295e4 0%, #ad4aa8 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .unknown {
+        background: linear-gradient(120deg, #ffffff 0%, #ffffff 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      .shadow {
+        background: linear-gradient(120deg, #97949d 0%, #42255d 100%);    
+    box-shadow: 0px 5px 20px -10px #000851;
+    
+      background-color: #1CB5E0;
+      }
+
+      

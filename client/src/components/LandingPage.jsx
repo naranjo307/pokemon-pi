@@ -1,16 +1,24 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import './landingPage.css'
 
 
 
 export default function LandingPage() {
 
     return (
-        <div>
-            <h1>Wellcome to Pokedex Web</h1>
-            <Link to = '/home'>
-                <button>Start</button>
+        <>
+        <div class="deconstructed">
+          WELLCOME TO POKEAPP
+         <div>WELLCOME TO POKEAPP</div>
+         <div>WELLCOME TO POKEAPP</div>
+         <div>WELLCOME TO POKEAPP</div>
+         <div>WELLCOME TO POKEAPP</div>
+         
+         </div>
+         <Link to = '/home'>
+                <button className='myButton'>Start</button>
             </Link>
-        </div>
+         </>
     )
 }
