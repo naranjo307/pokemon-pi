@@ -73,7 +73,7 @@ const getAllPokemons = async () => {
     return infoTotal2
 
 }
-// 33
+// 3333
 router.get('/pokemons', async (req, res) => {
     const name = req.query.name
     let pokemonsTotales = await getAllPokemons()
