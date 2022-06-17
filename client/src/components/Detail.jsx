@@ -43,16 +43,16 @@ useEffect(() => {
             {
                 myPokemon.length > 0  ? 
                 <>
-             <div className="cardDetail">
+             <div className="gradient-border">
                  <h1>{myPokemon[0].name}</h1>
                  <img className= 'detailImg 'src = {myPokemon[0].image}/>
-                 <h2 className="stats" ><img className="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png"/>  {myPokemon[0].hp}</h2>
-                 <h2 className="stats"><img className="icon" src="https://cdn-icons.flaticon.com/png/128/2746/premium/2746966.png?token=exp=1655257199~hmac=2eba99004813f6a98224036a1f359f1a"/>  {myPokemon[0].attack}</h2>
-                 <h2 className="stats"><img className="icon" src="https://cdn-icons.flaticon.com/png/128/3288/premium/3288781.png?token=exp=1655257284~hmac=8bc0fcd8974d19645af9ff6238efcacc"/>  {myPokemon[0].defense}</h2>
-                 <h2 className="stats"><img className="icon" src="https://cdn-icons-png.flaticon.com/128/1408/1408799.png"/>  {myPokemon[0].speed}</h2>
+                 <h2 className="stats" ><img className="icon" src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png"/>  {myPokemon[0].hp} <progress className="progress"  max='160' value={myPokemon[0].hp}></progress></h2>
+                 <h2 className="stats"><img className="icon" src="https://cdn-icons.flaticon.com/png/128/2746/premium/2746966.png?token=exp=1655257199~hmac=2eba99004813f6a98224036a1f359f1a"/>  {myPokemon[0].attack} <progress max='160' value={myPokemon[0].attack}></progress></h2>
+                 <h2 className="stats"><img className="icon" src="https://cdn-icons.flaticon.com/png/128/3288/premium/3288781.png?token=exp=1655257284~hmac=8bc0fcd8974d19645af9ff6238efcacc"/>  {myPokemon[0].defense} <progress max='160' value={myPokemon[0].defense}></progress></h2>
+                 <h2 className="stats"><img className="icon" src="https://cdn-icons-png.flaticon.com/128/1408/1408799.png"/>  {myPokemon[0].speed} <progress max='160' value={myPokemon[0].speed}></progress></h2>
                  <h2 className="stats"><img className="icon" src="https://cdn-icons.flaticon.com/png/128/2330/premium/2330995.png?token=exp=1655257347~hmac=66095b90e19520be8977f5b640eaf7c6"/>  {myPokemon[0].height}</h2>
                  <h2 className="stats"><img className="icon" src="https://cdn-icons-png.flaticon.com/128/847/847345.png"/>  {myPokemon[0].weight}</h2>
-                 <h2 className="stats">Types: {myPokemon[0].types.toString()}</h2>
+                 <h2 className="stats">Types: {myPokemon[0].types.toString()} </h2>
                  </div>
                  <div>
                  <Link to = '/home'>
@@ -62,7 +62,7 @@ useEffect(() => {
              </>:
                <div>
                <h1>LOADING</h1>
-               <img src="https://i.gifer.com/origin/f3/f367083443fba6e9344555f635e1ba4a_w200.webp"></img>
+               <img src="https://c.tenor.com/Hg2Mb_mQdhYAAAAi/pokemon-pokeball.gif"></img>
                </div>
             }
             

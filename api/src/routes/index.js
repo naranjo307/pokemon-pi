@@ -13,7 +13,7 @@ var p3 = 'official-artwork'
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 const getApiInfo = async () => {
-    const apiUrl = await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=40')
+    const apiUrl = await axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=100')
     const apiInfo = await apiUrl.data.results
     let pokemons = await Promise.all (
 
@@ -73,7 +73,7 @@ const getAllPokemons = async () => {
     return infoTotal2
 
 }
-
+// 33
 router.get('/pokemons', async (req, res) => {
     const name = req.query.name
     let pokemonsTotales = await getAllPokemons()
